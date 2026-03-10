@@ -5,3 +5,4 @@ class StudentSerializer(serializers.ModelSerializer):
     class Meta:
         model = StudentModel
         fields = '__all__'
+        read_only_fields = ['created_at']

@@ -24,4 +24,4 @@ class StudentModel(models.Model):
     phone = models.CharField(max_length=17)
     address = models.TextField()
     is_active = models.BooleanField(default=True)
-    create_at = models.DateTimeField(auto_created=True)
+    created_at = models.DateTimeField(auto_now_add=True)
